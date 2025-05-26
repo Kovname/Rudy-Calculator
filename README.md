@@ -15,25 +15,3 @@ ruby calculator.rb
 ```
 
 Програма запропонує ввести два числа і вибрати операцію (+, -, *, /), після чого виведе результат.
-
-## Приклад використання в коді
-
-```ruby
-calculator = Calculator.new
-result = calculator.add(5, 3)     # => 8
-result = calculator.subtract(5, 3) # => 2
-result = calculator.multiply(5, 3) # => 15
-result = calculator.divide(6, 3)   # => 2
-```
-
-## Запуск тестів
-
-Для запуску тестів використовуйте команду:
-
-```
-ruby calculator_test.rb
-```
-
-## Вимоги
-
-- Ruby 2.0 або вище 

@@ -14,23 +14,23 @@ class Calculator
   end
 
   def divide(a, b)
-    raise ZeroDivisionError, "Деление на ноль невозможно" if b.zero?
+    raise ZeroDivisionError, "Ділення на нуль неможливе" if b.zero?
     a / b
   end
 end
 
-# Пример использования
+# Приклад використання
 if __FILE__ == $PROGRAM_NAME
   calc = Calculator.new
   
-  puts "Простой калькулятор на Ruby"
-  puts "Введите первое число:"
+  puts "Простий калькулятор на Ruby"
+  puts "Введіть перше число:"
   num1 = gets.chomp.to_f
   
-  puts "Введите второе число:"
+  puts "Введіть друге число:"
   num2 = gets.chomp.to_f
   
-  puts "Выберите операцию (+, -, *, /):"
+  puts "Виберіть операцію (+, -, *, /):"
   operation = gets.chomp
   
   result = case operation
@@ -47,7 +47,7 @@ if __FILE__ == $PROGRAM_NAME
       e.message
     end
   else
-    "Неизвестная операция"
+    "Невідома операція"
   end
   
   puts "Результат: #{result}"
